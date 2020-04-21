@@ -1,0 +1,10 @@
+2020-04-21T08:47:26+00:00 CRITICAL Uncaught Error: Class 'Jetpack' not found in O:\wamp64\www\temaentao\wp-content\plugins\woocommerce-services\classes\class-wc-connect-jetpack.php:88
+Stack trace:
+#0 O:\wamp64\www\temaentao\wp-content\plugins\woocommerce-services\classes\class-wc-connect-nux.php(705): WC_Connect_Jetpack::build_connect_url('http://localhos...')
+#1 O:\wamp64\www\temaentao\wp-includes\class-wp-hook.php(287): WC_Connect_Nux->ajax_get_jetpack_connect_url('')
+#2 O:\wamp64\www\temaentao\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 O:\wamp64\www\temaentao\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 O:\wamp64\www\temaentao\wp-admin\admin-ajax.php(175): do_action('wp_ajax_woocomm...')
+#5 {main}
+  thrown in O:\wamp64\www\temaentao\wp-content\plugins\woocommerce-services\classes\class-wc-connect-jetpack.php on line 88
+

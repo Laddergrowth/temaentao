@@ -31,10 +31,20 @@ img.emoji {
 }
 </style>
 	<link rel='stylesheet' id='wp-block-library-css'  href='https://laddergrowth.github.io/temaentao/wp-includes/css/dist/block-library/style.min.css?ver=5.4' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-5-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/all.min.css?ver=2.9.6' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-4-shims-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/v4-shims.min.css?ver=2.9.6' type='text/css' media='all' />
-<link rel='stylesheet' id='themeisle-block_styles-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/themeisle-companion/vendor/codeinwp/gutenberg-blocks/build/style.css?ver=1.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=2.5.14' type='text/css' media='all' />
 <link rel='stylesheet' id='hestia-clients-bar-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/themeisle-companion/obfx_modules/companion-legacy/assets/css/hestia/clients-bar.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=4.0.1' type='text/css' media='all' />
+<style id='woocommerce-layout-inline-css' type='text/css'>
+
+	.infinite-scroll .woocommerce-pagination {
+		display: none;
+	}
+</style>
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=4.0.1' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=4.0.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
 <link rel='stylesheet' id='bootstrap-css'  href='https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/bootstrap/css/bootstrap.min.css?ver=1.0.2' type='text/css' media='all' />
 <link rel='stylesheet' id='hestia-font-sizes-css'  href='https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/css/font-sizes.min.css?ver=2.5.7' type='text/css' media='all' />
 <link rel='stylesheet' id='hestia_style-css'  href='https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/style.min.css?ver=2.5.7' type='text/css' media='all' />
@@ -196,30 +206,175 @@ img.emoji {
 			.main article.section .has-title-font-size {
 				font-size: 42px;
 			}}
-
-		.page-template-builder-fullwidth-std .header > .elementor {
-			padding-top: 70px;
-		}
-
 </style>
 <link rel='stylesheet' id='font-awesome-5-all-css'  href='https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/font-awesome/css/all.min.css?ver=1.0.2' type='text/css' media='all' />
 <link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/font-awesome/css/v4-shims.min.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia_woocommerce_style-css'  href='https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/css/woocommerce.min.css?ver=2.5.7' type='text/css' media='all' />
+<style id='hestia_woocommerce_style-inline-css' type='text/css'>
+
+		.woocommerce-cart .shop_table .actions .coupon .input-text:focus,
+		.woocommerce-checkout #customer_details .input-text:focus, .woocommerce-checkout #customer_details select:focus,
+		.woocommerce-checkout #order_review .input-text:focus,
+		.woocommerce-checkout #order_review select:focus,
+		.woocommerce-checkout .woocommerce-form .input-text:focus,
+		.woocommerce-checkout .woocommerce-form select:focus,
+		.woocommerce div.product form.cart .variations select:focus,
+		.woocommerce .woocommerce-ordering select:focus {
+			background-image: -webkit-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: -webkit-linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+		}
+
+		.woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li.active a {
+			color:#e91e63;
+		}
+		
+		.woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li.active a,
+		.woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li a:hover {
+			border-color:#e91e63
+		}
+		
+		.added_to_cart.wc-forward:hover,
+		#add_payment_method .wc-proceed-to-checkout a.checkout-button:hover,
+		#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+		.added_to_cart.wc-forward,
+		.woocommerce nav.woocommerce-pagination ul li span.current,
+		.woocommerce ul.products li.product .onsale,
+		.woocommerce span.onsale,
+		.woocommerce .single-product div.product form.cart .button,
+		.woocommerce #respond input#submit,
+		.woocommerce button.button,
+		.woocommerce input.button,
+		.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+		.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button,
+		.woocommerce #respond input#submit.alt,
+		.woocommerce a.button.alt,
+		.woocommerce button.button.alt,
+		.woocommerce input.button.alt,
+		.woocommerce input.button:disabled,
+		.woocommerce input.button:disabled[disabled],
+		.woocommerce a.button.wc-backward,
+		.woocommerce .single-product div.product form.cart .button:hover,
+		.woocommerce #respond input#submit:hover,
+		.woocommerce button.button:hover,
+		.woocommerce input.button:hover,
+		.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+		.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button:hover,
+		.woocommerce #respond input#submit.alt:hover,
+		.woocommerce a.button.alt:hover,
+		.woocommerce button.button.alt:hover,
+		.woocommerce input.button.alt:hover,
+		.woocommerce input.button:disabled:hover,
+		.woocommerce input.button:disabled[disabled]:hover,
+		.woocommerce #respond input#submit.alt.disabled,
+		.woocommerce #respond input#submit.alt.disabled:hover,
+		.woocommerce #respond input#submit.alt:disabled,
+		.woocommerce #respond input#submit.alt:disabled:hover,
+		.woocommerce #respond input#submit.alt:disabled[disabled],
+		.woocommerce #respond input#submit.alt:disabled[disabled]:hover,
+		.woocommerce a.button.alt.disabled,
+		.woocommerce a.button.alt.disabled:hover,
+		.woocommerce a.button.alt:disabled,
+		.woocommerce a.button.alt:disabled:hover,
+		.woocommerce a.button.alt:disabled[disabled],
+		.woocommerce a.button.alt:disabled[disabled]:hover,
+		.woocommerce button.button.alt.disabled,
+		.woocommerce button.button.alt.disabled:hover,
+		.woocommerce button.button.alt:disabled,
+		.woocommerce button.button.alt:disabled:hover,
+		.woocommerce button.button.alt:disabled[disabled],
+		.woocommerce button.button.alt:disabled[disabled]:hover,
+		.woocommerce input.button.alt.disabled,
+		.woocommerce input.button.alt.disabled:hover,
+		.woocommerce input.button.alt:disabled,
+		.woocommerce input.button.alt:disabled:hover,
+		.woocommerce input.button.alt:disabled[disabled],
+		.woocommerce input.button.alt:disabled[disabled]:hover,
+		.woocommerce-button,
+		.woocommerce-Button,
+		.woocommerce-button:hover,
+		.woocommerce-Button:hover,
+		#secondary div[id^=woocommerce_price_filter] .price_slider .ui-slider-range,
+		.footer div[id^=woocommerce_price_filter] .price_slider .ui-slider-range,
+		div[id^=woocommerce_product_tag_cloud].widget a,
+		div[id^=woocommerce_widget_cart].widget .buttons .button,
+		div.woocommerce table.my_account_orders .button {
+		    background-color: #e91e63;
+		}
+		
+		.added_to_cart.wc-forward,
+		.woocommerce .single-product div.product form.cart .button,
+		.woocommerce #respond input#submit,
+		.woocommerce button.button,
+		.woocommerce input.button,
+		#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+		.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+		.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button,
+		.woocommerce #respond input#submit.alt,
+		.woocommerce a.button.alt,
+		.woocommerce button.button.alt,
+		.woocommerce input.button.alt,
+		.woocommerce input.button:disabled,
+		.woocommerce input.button:disabled[disabled],
+		.woocommerce a.button.wc-backward,
+		.woocommerce div[id^=woocommerce_widget_cart].widget .buttons .button,
+		.woocommerce-button,
+		.woocommerce-Button,
+		div.woocommerce table.my_account_orders .button {
+		    -webkit-box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		    box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		}
+		
+		.woocommerce nav.woocommerce-pagination ul li span.current,
+		.added_to_cart.wc-forward:hover,
+		.woocommerce .single-product div.product form.cart .button:hover,
+		.woocommerce #respond input#submit:hover,
+		.woocommerce button.button:hover,
+		.woocommerce input.button:hover,
+		#add_payment_method .wc-proceed-to-checkout a.checkout-button:hover,
+		.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+		.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button:hover,
+		.woocommerce #respond input#submit.alt:hover,
+		.woocommerce a.button.alt:hover,
+		.woocommerce button.button.alt:hover,
+		.woocommerce input.button.alt:hover,
+		.woocommerce input.button:disabled:hover,
+		.woocommerce input.button:disabled[disabled]:hover,
+		.woocommerce a.button.wc-backward:hover,
+		.woocommerce div[id^=woocommerce_widget_cart].widget .buttons .button:hover,
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.pagination span.current:hover,
+		.woocommerce-button:hover,
+		.woocommerce-Button:hover,
+		div.woocommerce table.my_account_orders .button:hover {
+			-webkit-box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+		    box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+			color: #fff;
+		}
+		
+		#secondary div[id^=woocommerce_price_filter] .price_slider .ui-slider-handle,
+		.footer div[id^=woocommerce_price_filter] .price_slider .ui-slider-handle {
+			border-color: #e91e63;
+		}
+		
+</style>
 <link rel='stylesheet' id='hestia_fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=2.5.7' type='text/css' media='all' />
-<link rel='stylesheet' id='themeisle-gutenberg-post-11-css'  href='https://laddergrowth.github.io/temaentao/wp-content/uploads/themeisle-gutenberg/post-11.css?ver=1587374867' type='text/css' media='all' />
-<link rel='stylesheet' id='themeisle-gutenberg-google-fonts-css'  href='//fonts.googleapis.com/css?family=Poppins%3A600%2Cnormal&#038;ver=1.5.0' type='text/css' media='all' />
 <script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
 <script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <link rel='https://api.w.org/' href='https://laddergrowth.github.io/temaentao/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://laddergrowth.github.io/temaentao/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://laddergrowth.github.io/temaentao/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 5.4" />
+<meta name="generator" content="WooCommerce 4.0.1" />
 <link rel="canonical" href="https://laddergrowth.github.io/temaentao/" />
 <link rel='shortlink' href='https://laddergrowth.github.io/temaentao/' />
 <link rel="alternate" type="application/json+oembed" href="https://laddergrowth.github.io/temaentao/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fladdergrowth.github.io%2Ftemaentao%2F" />
 <link rel="alternate" type="text/xml+oembed" href="https://laddergrowth.github.io/temaentao/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fladdergrowth.github.io%2Ftemaentao%2F&#038;format=xml" />
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
 
-<body class="home page-template-default page page-id-11 blog-post header-layout-default">
+<body class="home page-template-default page page-id-4284 theme-hestia woocommerce-no-js blog-post header-layout-default">
 		<div class="wrapper ">
 		<header class="header ">
 			<div style="display: none"></div>		<nav class="navbar navbar-default navbar-fixed-top  navbar-color-on-scroll navbar-transparent hestia_left">
@@ -239,9 +394,8 @@ img.emoji {
 			</button>
 					</div>
 				</div>
-		<div id="main-navigation" class="collapse navbar-collapse"><ul id="menu-primeiro_blueprint" class="nav navbar-nav"><li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-18 active"><a title="Home" href="https://laddergrowth.github.io/temaentao/">Home</a></li>
-<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a title="Blog" href="https://laddergrowth.github.io/temaentao/blog/">Blog</a></li>
-<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a title="Contact" href="https://laddergrowth.github.io/temaentao/contact/">Contact</a></li>
+		<div id="main-navigation" class="collapse navbar-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-4286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4286"><a title="Blog" href="https://laddergrowth.github.io/temaentao/065c0-blog/">Blog</a></li>
+<li id="menu-item-4287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4287"><a title="Shop" href="https://laddergrowth.github.io/temaentao/065c0-shop/">Shop</a></li>
 </ul></div>			</div>
 					</nav>
 				</header>
@@ -257,156 +411,321 @@ img.emoji {
 										<div class="row hestia-big-title-content">
 								<div class="
 		 big-title-slider-content text-center col-sm-8 col-sm-offset-2 		">
-											</div>
+							<h1 class="hestia-title">Slick Material Design</h1>
+										<span class="sub-title">Beatiful, Elegantly Coded, One-Page WordPress Theme for Business</span>
+										<div class="buttons">
+					<a href="#"
+							title="See More"
+							class="btn btn-primary" >See More</a>
+									</div>
+					</div>
 							</div>
 									</div><!-- /.container -->
 
 				<div class="header-filter"
-					style="background-image: url(https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/img/slider2.jpg)"				></div><!-- /.header-filter -->
+					style="background-image: url(https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/architecture-1.jpg)"				></div><!-- /.header-filter -->
 							</div><!-- /.page-header -->
 		</div>
 						</div>
 			</div>
 		</div>
 			<div class="main  main-raised ">
-					<section class="hestia-about section-image" id="about" data-sorder="hestia_about" style="background-image: url('https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/img/contact.jpg');">
+				<section class="hestia-features " id="features" data-sorder="hestia_features" >
+						<div class="container">
+									<div class="row">
+						<div class="col-md-8 col-md-offset-2 hestia-features-title-area">
+							<h2 class="hestia-title">Why our product is the best</h2><h5 class="description">You will find these qualities in all of our products</h5>						</div>
+					</div>
+							<div class="hestia-features-content">
+		<div class="row">				<div class="col-xs-12 col-md-4 feature-box">
+					<div class="hestia-info">
+						<a href="#">									<div class="icon" style="color:#e91e63">
+										<i class="fa fa-wechat"></i>
+									</div>
+																								<h4 class="info-title">Responsive</h4>
+																				</a>
+																<p>Showcase the same content across all devices. It can be a tablet, phone or laptop. Components used in the theme are designed to look good on smaller screen size too.</p>
+											</div>
+				</div>
+								<div class="col-xs-12 col-md-4 feature-box">
+					<div class="hestia-info">
+						<a href="#">									<div class="icon" style="color:#01bcd4">
+										<i class="fa fa-check"></i>
+									</div>
+																								<h4 class="info-title">Quality</h4>
+																				</a>
+																<p>We frequently release updates for our products in order to add new features and keep it compatible with niche plugins.</p>
+											</div>
+				</div>
+								<div class="col-xs-12 col-md-4 feature-box">
+					<div class="hestia-info">
+						<a href="#">									<div class="icon" style="color:#4caf50">
+										<i class="fa fa-support"></i>
+									</div>
+																								<h4 class="info-title">Support</h4>
+																				</a>
+																<p>A collection of docs can be found on our website to help you achieve what you need using our product. Assistance by email can be provided if you need it.</p>
+											</div>
+				</div>
+				</div>		</div>
+									</div>
+					</section>
+					<section class="hestia-shop products section-gray" id="products"
+					data-sorder="hestia_shop" >
 								<div class="container">
-					<div class="row hestia-about-content">
-						
-<div class="wp-block-themeisle-blocks-advanced-columns has-3-columns has-desktop-equal-layout has-tablet-equal-layout has-mobile-collapsedRows-layout has-default-gap has-vertical-unset" id="wp-block-themeisle-blocks-advanced-columns-f0fb13fd"><div class="wp-block-themeisle-blocks-advanced-columns-overlay"></div><div class="innerblocks-wrap">
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-6bf2bdb7">
-<figure class="wp-block-image"><img alt=""/></figure>
+											<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center hestia-shop-title-area">
+																	<h2 class="hestia-title">Products</h2>
+																									<h5 class="description">Showcase your products in this beautiful shop section.</h5>
+															</div>
+						</div>
+								<div class="hestia-shop-content">
+			<div class="row">					<div class="col-ms-6 col-sm-6 col-md-3 shop-item">
+						<div class="card card-product">
+															<div class="card-image">
+									<a href="https://laddergrowth.github.io/temaentao/product/womens-shoulder-handbag-pouch-set/" title="Handbag Pouch Set">
+										<img width="230" height="350" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/artem-beliaikin-v9dffvQaM6k-unsplash-230x350.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />									</a>
+									<div class="ripple-container"></div>
+								</div>
+															<div class="content">
+								<h6 class="category"><a href="https://laddergrowth.github.io/temaentao/product-category/trending/" rel="tag">Trending</a></h6>
+								<h4 class="card-title">
+																		<a class="shop-item-title-link" href="https://laddergrowth.github.io/temaentao/product/womens-shoulder-handbag-pouch-set/" title="Handbag Pouch Set">Handbag Pouch Set</a>
+
+								</h4>
+
+																	<div class="card-description"><p>As absolute is by amounted repeated entirely ye returned. These ready timed enjoy might sir yet one since.</p>
 </div>
+									
+								<div class="footer">
 
+									<div class="price"><h4><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&pound;</span>35.00</span></h4></div>
+									<div class="stats">
+										<a rel="nofollow" href="https://laddergrowth.github.io/temaentao/product/womens-shoulder-handbag-pouch-set/" data-quantity="1" data-product_id="226" data-product_sku="Womansku10" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn btn-just-icon btn-simple btn-default" title="Read more"><i rel="tooltip" data-original-title="Read more" class="fas fa-cart-plus"></i></a>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-ms-6 col-sm-6 col-md-3 shop-item">
+						<div class="card card-product">
+															<div class="card-image">
+									<a href="https://laddergrowth.github.io/temaentao/product/womens-525-perfect-waist-straight-jean/" title="Waist Straight Jean">
+										<img width="230" height="350" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/arnel-hasanovic-jJqd2mc-M9Q-unsplash-230x350.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />									</a>
+									<div class="ripple-container"></div>
+								</div>
+															<div class="content">
+								<h6 class="category"><a href="https://laddergrowth.github.io/temaentao/product-category/fashion/" rel="tag">Fashion</a></h6>
+								<h4 class="card-title">
+																		<a class="shop-item-title-link" href="https://laddergrowth.github.io/temaentao/product/womens-525-perfect-waist-straight-jean/" title="Waist Straight Jean">Waist Straight Jean</a>
 
+								</h4>
 
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-115383f8"></div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-e46343e6"></div>
-</div></div>
-
-
-
-<div class="wp-block-themeisle-blocks-service">
-<h4 id="wp-block-themeisle-blocks-advanced-heading-7b3363a8" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-7b3363a8">Basic</h4>
-
-
-
-<p id="wp-block-themeisle-blocks-advanced-heading-44a2e5dc" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-44a2e5dc">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-
-
-<div id="wp-block-themeisle-blocks-button-group-a945fd8c" class="wp-block-themeisle-blocks-button-group wp-block-button"><a target="_self" class="wp-block-themeisle-blocks-button wp-block-themeisle-blocks-button-0 wp-block-button__link" rel="noopener noreferrer"><span>Know More</span></a></div>
+																	<div class="card-description"><p>In post mean shot ye. There out her child sir his lived. Design at uneasy me season of branch on praise esteem.</p>
 </div>
+									
+								<div class="footer">
 
+									<div class="price"><h4><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&pound;</span>123.00</span></h4></div>
+									<div class="stats">
+										<a rel="nofollow" href="?add-to-cart=225" data-quantity="1" data-product_id="225" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn btn-just-icon btn-simple btn-default" title="Add to cart"><i rel="tooltip" data-original-title="Add to cart" class="fas fa-cart-plus"></i></a>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-ms-6 col-sm-6 col-md-3 shop-item">
+						<div class="card card-product">
+															<div class="card-image">
+									<a href="https://laddergrowth.github.io/temaentao/product/butterflies-womens-handbag/" title="Butterflies Handbag">
+										<img width="230" height="350" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/icons8-team-k5fUTay0ghw-unsplash1-230x350.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />									</a>
+									<div class="ripple-container"></div>
+								</div>
+															<div class="content">
+								<h6 class="category"><a href="https://laddergrowth.github.io/temaentao/product-category/trending/" rel="tag">Trending</a></h6>
+								<h4 class="card-title">
+																		<a class="shop-item-title-link" href="https://laddergrowth.github.io/temaentao/product/butterflies-womens-handbag/" title="Butterflies Handbag">Butterflies Handbag</a>
 
+								</h4>
 
-<div class="wp-block-themeisle-blocks-advanced-columns has-4-columns has-desktop-equal-layout has-tablet-equal-layout has-mobile-collapsedRows-layout has-default-gap has-vertical-unset" id="wp-block-themeisle-blocks-advanced-columns-eef48e1a"><div class="wp-block-themeisle-blocks-advanced-columns-overlay"></div><div class="innerblocks-wrap">
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-3b5dc00c"></div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-2d2b2655"></div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-70f02ac3"></div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-d8296f3b"></div>
-</div></div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-columns has-4-columns has-desktop-equal-layout has-tablet-equal-layout has-mobile-collapsedRows-layout has-default-gap has-vertical-unset" id="wp-block-themeisle-blocks-advanced-columns-0e9eba11"><div class="wp-block-themeisle-blocks-advanced-columns-overlay"></div><div class="innerblocks-wrap">
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-0f60cc29"></div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-add098ec"></div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-1bff8050"></div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-7f566091"></div>
-</div></div>
-
-
-
-<p></p>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-columns alignfull has-1-columns has-desktop-equal-layout has-tablet-equal-layout has-mobile-equal-layout has-default-gap has-vertical-center" id="wp-block-themeisle-blocks-advanced-columns-d924811f"><div class="wp-block-themeisle-blocks-advanced-columns-overlay"></div><div class="innerblocks-wrap">
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-9642c547">
-<h2 id="wp-block-themeisle-blocks-advanced-heading-ef368105" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-ef368105">What Makes Us Unique</h2>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-columns has-3-columns has-desktop-equal-layout has-tablet-equal-layout has-mobile-collapsedRows-layout has-default-gap has-vertical-unset" id="wp-block-themeisle-blocks-advanced-columns-ecc839c6"><div class="wp-block-themeisle-blocks-advanced-columns-overlay"></div><div class="innerblocks-wrap">
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-fd08d1fe">
-<div class="wp-block-themeisle-blocks-service">
-<p class="wp-block-themeisle-blocks-font-awesome-icons" id="wp-block-themeisle-blocks-font-awesome-icons-acd85ba5"><span class="wp-block-themeisle-blocks-font-awesome-icons-container"><i class="fas fa-th"></i></span></p>
-
-
-
-<h4 id="wp-block-themeisle-blocks-advanced-heading-bfd98b51" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-bfd98b51">Responsive</h4>
-
-
-
-<p id="wp-block-themeisle-blocks-advanced-heading-64699d55" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-64699d55">Lorem ipsum dolor sit amet elit do, consectetur dolor sit amet elit do, consectetur.. Lorem ipsum dolor sit amet elit do, consectetur.</p>
+																	<div class="card-description"><p>So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid.</p>
 </div>
+									
+								<div class="footer">
+
+									<div class="price"><h4><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&pound;</span>119.00</span></h4></div>
+									<div class="stats">
+										<a rel="nofollow" href="?add-to-cart=224" data-quantity="1" data-product_id="224" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn btn-just-icon btn-simple btn-default" title="Add to cart"><i rel="tooltip" data-original-title="Add to cart" class="fas fa-cart-plus"></i></a>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-ms-6 col-sm-6 col-md-3 shop-item">
+						<div class="card card-product">
+															<div class="card-image">
+									<a href="https://laddergrowth.github.io/temaentao/product/glory-fashion-womens-handbag/" title="Glory Handbag">
+										<img width="230" height="350" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/icons8-team-k5fUTay0ghw-unsplash2-230x350.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />									</a>
+									<div class="ripple-container"></div>
+								</div>
+															<div class="content">
+								<h6 class="category"><a href="https://laddergrowth.github.io/temaentao/product-category/fashion/" rel="tag">Fashion</a></h6>
+								<h4 class="card-title">
+																		<a class="shop-item-title-link" href="https://laddergrowth.github.io/temaentao/product/glory-fashion-womens-handbag/" title="Glory Handbag">Glory Handbag</a>
+
+								</h4>
+
+																	<div class="card-description"><p>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</p>
 </div>
+									
+								<div class="footer">
 
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-0636a37f">
-<div class="wp-block-themeisle-blocks-service">
-<p class="wp-block-themeisle-blocks-font-awesome-icons" id="wp-block-themeisle-blocks-font-awesome-icons-70de05a5"><span class="wp-block-themeisle-blocks-font-awesome-icons-container"><i class="far fa-thumbs-up"></i></span></p>
-
-
-
-<h4 id="wp-block-themeisle-blocks-advanced-heading-aee4f22f" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-aee4f22f">Efficient</h4>
-
-
-
-<p id="wp-block-themeisle-blocks-advanced-heading-65e79348" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-65e79348">Lorem ipsum dolor sit amet elit do, consectetur dolor sit amet elit do, consectetur.. Lorem ipsum dolor sit amet elit do, consectetur.</p>
-</div>
-</div>
-
-
-
-<div class="wp-block-themeisle-blocks-advanced-column" id="wp-block-themeisle-blocks-advanced-column-7c7131a1">
-<div class="wp-block-themeisle-blocks-service">
-<p class="wp-block-themeisle-blocks-font-awesome-icons" id="wp-block-themeisle-blocks-font-awesome-icons-0bef063e"><span class="wp-block-themeisle-blocks-font-awesome-icons-container"><i class="far fa-comment"></i></span></p>
-
-
-
-<h4 id="wp-block-themeisle-blocks-advanced-heading-01e00446" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-01e00446">Quick Support</h4>
-
-
-
-<p id="wp-block-themeisle-blocks-advanced-heading-cb79822e" class="wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-cb79822e">Lorem ipsum dolor sit amet elit do, consectetur dolor sit amet elit do, consectetur.. Lorem ipsum dolor sit amet elit do, consectetur.</p>
-</div>
-</div>
-</div></div>
-</div>
-</div></div>
+									<div class="price"><h4><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&pound;</span>99.00</span></h4></div>
+									<div class="stats">
+										<a rel="nofollow" href="?add-to-cart=223" data-quantity="1" data-product_id="223" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn btn-just-icon btn-simple btn-default" title="Add to cart"><i rel="tooltip" data-original-title="Add to cart" class="fas fa-cart-plus"></i></a>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div><!-- /.row --><div class="row"></div>		</div>
+						</div>
+							</section>
+					<section class="hestia-team " id="team" data-sorder="hestia_team" >
+						<div class="container">
+									<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center hestia-team-title-area">
+							<h2 class="hestia-title">Meet our team</h2><h5 class="description">Provide basic info such as avatar, biography and contact links about your employees.</h5>						</div>
+					</div>
+							<div class="hestia-team-content">
+				<div class="row">					<div class="col-xs-12 col-ms-6 col-sm-6">
+						<div class="card card-profile card-plain">
+							<div class="col-md-5">
+								<div class="card-image">
+									<img class="img" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/03/1.jpg"  alt="Desmond Purpleson"  title="Desmond Purpleson" />																	</div>
+							</div>
+							<div class="col-md-7">
+								<div class="content">
+																												<h4 class="card-title">Desmond Purpleson</h4>
+																												<h6 class="category text-muted">CEO</h6>
+																												<p class="card-description">Locavore pinterest chambray affogato art party, forage coloring book typewriter. Bitters cold selfies, retro celiac sartorial mustache.</p>
+																																						<div class="footer">
+												<a href="http://facebook.com" class="btn btn-just-icon btn-simple"><i class="fa fa-facebook"></i></a><a href="http://plus.google.com" class="btn btn-just-icon btn-simple"><i class="fa fa-google-plus"></i></a><a href="http://twitter.com" class="btn btn-just-icon btn-simple"><i class="fa fa-twitter"></i></a><a href="http://linkedin.com" class="btn btn-just-icon btn-simple"><i class="fa fa-linkedin"></i></a>											</div>
+																			</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-ms-6 col-sm-6">
+						<div class="card card-profile card-plain">
+							<div class="col-md-5">
+								<div class="card-image">
+									<img class="img" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/03/2.jpg"  alt="Parsley Pepperspray"  title="Parsley Pepperspray" />																	</div>
+							</div>
+							<div class="col-md-7">
+								<div class="content">
+																												<h4 class="card-title">Parsley Pepperspray</h4>
+																												<h6 class="category text-muted">Marketing Specialist</h6>
+																												<p class="card-description">Craft beer salvia celiac mlkshk. Pinterest celiac tumblr, portland salvia skateboard cliche thundercats. Tattooed chia austin hell.</p>
+																																						<div class="footer">
+												<a href="http://facebook.com" class="btn btn-just-icon btn-simple"><i class="fa fa-facebook"></i></a><a href="http://twitter.com" class="btn btn-just-icon btn-simple"><i class="fa fa-twitter"></i></a><a href="http://pinterest.com" class="btn btn-just-icon btn-simple"><i class="fa fa-pinterest"></i></a><a href="http://linkedin.com" class="btn btn-just-icon btn-simple"><i class="fa fa-linkedin"></i></a>											</div>
+																			</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-ms-6 col-sm-6">
+						<div class="card card-profile card-plain">
+							<div class="col-md-5">
+								<div class="card-image">
+									<img class="img" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/03/3.jpg"  alt="Desmond Eagle"  title="Desmond Eagle" />																	</div>
+							</div>
+							<div class="col-md-7">
+								<div class="content">
+																												<h4 class="card-title">Desmond Eagle</h4>
+																												<h6 class="category text-muted">Graphic Designer</h6>
+																												<p class="card-description">Pok pok direct trade godard street art, poutine fam typewriter food truck narwhal kombucha wolf cardigan butcher whatever pickled you.</p>
+																																						<div class="footer">
+												<a href="http://facebook.com" class="btn btn-just-icon btn-simple"><i class="fa fa-facebook"></i></a><a href="http://twitter.com" class="btn btn-just-icon btn-simple"><i class="fa fa-twitter"></i></a><a href="http://linkedin.com" class="btn btn-just-icon btn-simple"><i class="fa fa-linkedin"></i></a><a href="http://dribbble.com" class="btn btn-just-icon btn-simple"><i class="fa fa-dribbble"></i></a>											</div>
+																			</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-ms-6 col-sm-6">
+						<div class="card card-profile card-plain">
+							<div class="col-md-5">
+								<div class="card-image">
+									<img class="img" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/03/4.jpg"  alt="Ruby Von Rails"  title="Ruby Von Rails" />																	</div>
+							</div>
+							<div class="col-md-7">
+								<div class="content">
+																												<h4 class="card-title">Ruby Von Rails</h4>
+																												<h6 class="category text-muted">Lead Developer</h6>
+																												<p class="card-description">Small batch vexillologist 90&#039;s blue bottle stumptown bespoke. Pok pok tilde fixie chartreuse, VHS gluten-free selfies wolf hot.</p>
+																																						<div class="footer">
+												<a href="http://github.com" class="btn btn-just-icon btn-simple"><i class="fa fa-github-square"></i></a><a href="http://facebook.com" class="btn btn-just-icon btn-simple"><i class="fa fa-facebook"></i></a><a href="http://twitter.com" class="btn btn-just-icon btn-simple"><i class="fa fa-twitter"></i></a><a href="http://linkedin.com" class="btn btn-just-icon btn-simple"><i class="fa fa-linkedin"></i></a>											</div>
+																			</div>
+							</div>
+						</div>
+					</div>
+					</div>			</div>
+						</div>
+					</section>
+				<section class="hestia-ribbon section section-image" id="ribbon" data-sorder="hestia_ribbon" style="background-image: url( https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/architecture-1.jpg);">
+						<div class="container">
+				<div class="row hestia-xs-text-center hestia-like-table hestia-ribbon-content">
+										<div class="col-md-8 hestia-ribbon-content-left" >
+													<h2 class="hestia-title" style="margin:0;">
+								Subscribe to our Newsletter							</h2>
+												</div>
+					<div class="col-md-4 text-center hestia-ribbon-content-right" >
+						<a href="#" class="btn btn-md btn-primary hestia-subscribe-button">Subscribe</a>					</div>
+				</div>
+			</div>
+		</section>
+				<section class="hestia-testimonials " id="testimonials" data-sorder="hestia_testimonials" >
+						<div class="container">
+									<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center hestia-testimonials-title-area">
+							<h2 class="hestia-title">What clients say</h2><h5 class="description">People that are using our products are happy to share their experience.</h5>						</div>
+					</div>
+							<div class="hestia-testimonials-content">
+		<div class="row">				<div class="col-xs-12 col-ms-6 col-sm-6 col-md-4">
+					<div class="card card-testimonial card-plain" >
+													<div class="card-avatar">
+								<img class="img" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/03/5.jpg"  alt="Inverness McKenzie"  title="Inverness McKenzie" />							</div>
+												<div class="content">
+															<h4 class="card-title">Inverness McKenzie</h4>
+																						<h6 class="category text-muted">Business Owner</h6>
+																						<p class="card-description">"We have no regrets! After using your product my business skyrocketed! I made back the purchase price in just 48 hours! I couldn&#039;t have asked for more than this."</p>
+													</div>
 					</div>
 				</div>
-			</section>
-					<section class="hestia-blogs " id="blog"
+								<div class="col-xs-12 col-ms-6 col-sm-6 col-md-4">
+					<div class="card card-testimonial card-plain" >
+													<div class="card-avatar">
+								<img class="img" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/03/6.jpg"  alt="Hanson Deck"  title="Hanson Deck" />							</div>
+												<div class="content">
+															<h4 class="card-title">Hanson Deck</h4>
+																						<h6 class="category text-muted">Independent Artist</h6>
+																						<p class="card-description">"Your company is truly upstanding and is behind its product 100 percent. Hestia is worth much more than I paid. I like Hestia more each day because it makes easier."</p>
+													</div>
+					</div>
+				</div>
+								<div class="col-xs-12 col-ms-6 col-sm-6 col-md-4">
+					<div class="card card-testimonial card-plain" >
+													<div class="card-avatar">
+								<img class="img" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/03/7.jpg"  alt="Natalya Undergrowth"  title="Natalya Undergrowth" />							</div>
+												<div class="content">
+															<h4 class="card-title">Natalya Undergrowth</h4>
+																						<h6 class="category text-muted">Freelancer</h6>
+																						<p class="card-description">"Thank you for making it painless, pleasant and most of all hassle free! I am so pleased with this product. Dude, your stuff is great! I will refer everyone I know."</p>
+													</div>
+					</div>
+				</div>
+				</div>		</div>
+					</div>
+					</section>
+				<section class="hestia-blogs " id="blog"
 			data-sorder="hestia_blog" >
 						<div class="container">
 									<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center hestia-blogs-title-area">
-							<h2 class="hestia-title">Blog</h2>						</div>
+							<h2 class="hestia-title">Blog</h2><h5 class="description">Display the latest posts on the front page.</h5>						</div>
 					</div>
 									<div class="hestia-blog-content">
 				<div class="row" >			<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
@@ -421,30 +740,126 @@ img.emoji {
 					</div>
 				</div>
 				</article>
-				</div>				</div>
+							<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
+				<div class="card card-plain card-blog">
+												<div class="card-image">
+								<a href="https://laddergrowth.github.io/temaentao/2018/11/21/sed-nimis-multa/" title="And so the adventure begins">
+									<img width="360" height="240" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/umbrella.jpg" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" />								</a>
+							</div>
+											<div class="content">
+						<h6 class="category"><a href="https://laddergrowth.github.io/temaentao/category/travel/" title="View all posts in Travel"  rel="tag">Travel</a> </h6>
+						<h4 class="card-title entry-title">
+							<a class="blog-item-title-link" href="https://laddergrowth.github.io/temaentao/2018/11/21/sed-nimis-multa/" title="And so the adventure begins" rel="bookmark">
+								And so the adventure begins							</a>
+						</h4>
+						<p class="card-description">Sic enim censent, oportunitatis esse beate vivere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videsne quam sit magna dissensio? Ergo, si semel tristior effectus est, hilara vita amissa est? Quam illa ardentis amores excitaret<a class="moretag" href="https://laddergrowth.github.io/temaentao/2018/11/21/sed-nimis-multa/"> Read more&hellip;</a></p>
+					</div>
+				</div>
+				</article>
+							<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
+				<div class="card card-plain card-blog">
+												<div class="card-image">
+								<a href="https://laddergrowth.github.io/temaentao/2018/11/21/pyrrhonem-aut-aristonem/" title="We rise by lifting others">
+									<img width="360" height="240" src="https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/architecture-1.jpg" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" />								</a>
+							</div>
+											<div class="content">
+						<h6 class="category"><a href="https://laddergrowth.github.io/temaentao/category/travel/" title="View all posts in Travel"  rel="tag">Travel</a> </h6>
+						<h4 class="card-title entry-title">
+							<a class="blog-item-title-link" href="https://laddergrowth.github.io/temaentao/2018/11/21/pyrrhonem-aut-aristonem/" title="We rise by lifting others" rel="bookmark">
+								We rise by lifting others							</a>
+						</h4>
+						<p class="card-description">Duo Reges: constructio interrete Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur id non ita fit? Cupiditates non Epicuri divisione finiebat, sed sua satietate. Scaevola tribunus plebis ferret ad plebem vellentne de ea re<a class="moretag" href="https://laddergrowth.github.io/temaentao/2018/11/21/pyrrhonem-aut-aristonem/"> Read more&hellip;</a></p>
+					</div>
+				</div>
+				</article>
+				</div><!-- /.row --><div class="row" ></div>				</div>
 							</div>
 					</section>
 				<section class="hestia-contact contactus section-image" id="contact"
-				data-sorder="hestia_contact" style="background-image: url(https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/img/contact.jpg);">
+				data-sorder="hestia_contact" style="background-image: url(https://laddergrowth.github.io/temaentao/wp-content/uploads/2019/07/architecture-1.jpg);">
 						<div class="container">
 								<div class="row">
 					<div class="col-md-5 hestia-contact-title-area" >
 													<h2 class="hestia-title">Get in Touch</h2>
-																							</div>
+																			<h5 class="description">You need more information about us?</h5>
+												<div class="hestia-description"><div class="hestia-info info-horizontal">
+<div class="icon icon-primary"><i class="fa fa-map-marker"></i></div>
+<div class="description">
+<h4 class="info-title" style="font-size: 18px">Find us at the office</h4>
+<p style="color: #ccc">Bld Mihail Kogalniceanu, nr. 8, 7652 Bucharest, Romania</p>
+
+</div>
+</div>
+<div class="hestia-info info-horizontal">
+<div class="icon icon-primary"><i class="fa fa-mobile"></i></div>
+<div class="description">
+<h4 class="info-title" style="font-size: 18px">Give us a ring</h4>
+<p style="color: #ccc">Michael Jordan +40 762 321 762 Mon - Fri, 8:00-22:00</p>
+
+</div>
+</div></div>					</div>
+											<div class="col-md-5 col-md-offset-2 hestia-contact-form-col" >
+							<div class="card card-contact">
+																	<div class="header header-raised header-primary text-center">
+										<h4 class="card-title">Contact Us</h4>
 									</div>
+																<div class="content">
+									<div class="wpforms-container wpforms-container-full" id="wpforms-4288"><form id="wpforms-form-4288" class="wpforms-validate wpforms-form" data-formid="4288" method="post" enctype="multipart/form-data" action="/temaentao/"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-4288-field_0-container" class="wpforms-field wpforms-field-name wpforms-one-half wpforms-first" data-field-id="0"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-4288-field_0">Name <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-4288-field_0" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][0]" placeholder="Your Name" required></div><div id="wpforms-4288-field_3-container" class="wpforms-field wpforms-field-email wpforms-one-half" data-field-id="3"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-4288-field_3">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-4288-field_3" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][3]" placeholder="Your Email" required></div><div id="wpforms-4288-field_4-container" class="wpforms-field wpforms-field-text" data-field-id="4"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-4288-field_4">Subject</label><input type="text" id="wpforms-4288-field_4" class="wpforms-field-large" name="wpforms[fields][4]" placeholder="Subject" ></div><div id="wpforms-4288-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-4288-field_2">Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-4288-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Your Message" required></textarea></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="4288"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="4284"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-4288" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Send message">Send message</button></div></form></div>  <!-- .wpforms-container --><div></div>								</div>
+							</div>
+						</div>
+										</div>
 							</div>
 					</section>
 							<footer class="footer footer-black footer-big">
 						<div class="container">
-																<div class="hestia-bottom-footer-content"><ul id="menu-primeiro_blueprint-1" class="footer-menu pull-left"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-18"><a href="https://laddergrowth.github.io/temaentao/" aria-current="page">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://laddergrowth.github.io/temaentao/blog/">Blog</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://laddergrowth.github.io/temaentao/contact/">Contact</a></li>
-</ul>					<div class="copyright pull-right">
+																<div class="hestia-bottom-footer-content">					<div class="copyright pull-right">
 				Hestia | Developed by <a href="https://themeisle.com" rel="nofollow">ThemeIsle</a>			</div>
 			</div>			</div>
 					</footer>
 				</div>
 	</div>
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<link rel='stylesheet' id='wpforms-full-css'  href='https://laddergrowth.github.io/temaentao/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.css?ver=1.5.9.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/temaentao\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/temaentao\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/laddergrowth.github.io\/temaentao\/065c0-cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.0.1'></script>
+<script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/temaentao\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/temaentao\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.0.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/temaentao\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/temaentao\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_f08a840bdb48eb54dcb7c0d396647f46","fragment_name":"wc_fragments_f08a840bdb48eb54dcb7c0d396647f46","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.0.1'></script>
+<script type='text/javascript'>
+		jQuery( 'body' ).bind( 'wc_fragments_refreshed', function() {
+			var jetpackLazyImagesLoadEvent;
+			try {
+				jetpackLazyImagesLoadEvent = new Event( 'jetpack-lazy-images-load', {
+					bubbles: true,
+					cancelable: true
+				} );
+			} catch ( e ) {
+				jetpackLazyImagesLoadEvent = document.createEvent( 'Event' )
+				jetpackLazyImagesLoadEvent.initEvent( 'jetpack-lazy-images-load', true, true );
+			}
+			jQuery( 'body' ).get( 0 ).dispatchEvent( jetpackLazyImagesLoadEvent );
+		} );
+	
+</script>
 <script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-includes/js/comment-reply.min.js?ver=5.4'></script>
 <script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/bootstrap/js/bootstrap.min.js?ver=1.0.2'></script>
 <script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
@@ -455,5 +870,13 @@ var requestpost = {"ajaxurl":"https:\/\/laddergrowth.github.io\/temaentao\/wp-ad
 </script>
 <script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/themes/hestia/assets/js/script.min.js?ver=2.5.7'></script>
 <script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-includes/js/wp-embed.min.js?ver=5.4'></script>
+<script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0'></script>
+<script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2'></script>
+<script type='text/javascript' src='https://laddergrowth.github.io/temaentao/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.5.9.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_url":"Please enter a valid URL.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_number":"Please enter a valid number.","val_confirm":"Field values do not match.","val_fileextension":"File type is not allowed.","val_filesize":"File exceeds max size allowed. File was not uploaded.","val_time12h":"Please enter time in 12-hour AM\/PM format (eg 8:45 AM).","val_time24h":"Please enter time in 24-hour format (eg 22:45).","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","val_post_max_size":"The total size of the selected files {totalSize} Mb exceeds the allowed limit {maxSize} Mb.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","post_max_size":"8388608","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/laddergrowth.github.io\/temaentao\/wp-content\/plugins\/wpforms-lite\/","gdpr":"1","ajaxurl":"https:\/\/laddergrowth.github.io\/temaentao\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"]}
+/* ]]> */
+</script>
 </body>
 </html>
